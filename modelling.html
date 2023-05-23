@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modeling Agency</title>
+  <style>
+    /* CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('6.jpg'); /* Add the path to your desired background image */
+      background-size: cover;
+      background-position: center;
+      color: #333;
+      margin: 0;
+    }
+    
+    header {
+      background-color:black;
+      color: hotpink;
+      padding: 3px;
+      text-align: center;
+    }
+    
+    nav {
+      background-color: white;
+      padding: 20px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    nav ul li {
+      margin: 0 10px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: pink;
+      font-weight: bold;
+      padding: 45px;
+    }
+    
+    nav ul li a:hover {
+      background-color:black;
+      color: hotpink;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    .hero-image {
+      background-image: url('modeling-agency-hero.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+    }
+    
+    .hero-content {
+      text-align: center;
+      padding: 100px;
+      color: hotpink;
+    }
+    
+    .hero-content h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    
+    .hero-content p {
+      font-size: 18px;
+    }
+    
+    .about-section {
+      margin-top: 40px;
+      text-align: center;
+      background-color:black;
+      padding: 40px;
+      color: hotpink;
+    }
+    
+    .about-section h2 {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    
+    .about-section p {
+      font-size: 20px;
+      color: hotpink;
+    }
+    
+    .services-section {
+      margin-top: 40px;
+      text-align: center;
+      background-color: black;
+      padding: 40px;
+      color: hotpink;
+    }
+    
+    .services-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .services-section p {
+      font-size: 28px;
+      color: hotpink;
+    }
+    
+    .previous-work-section {
+      margin-top: 40px;
+      text-align: center;
+      background-color:black;
+      padding: 35px;
+      color: hotpink;
+    }
+    
+    .previous-work-section h2 {
+      font-size: 45px;
+      margin-bottom: 30px;
+    }
+    
+    .previous-work-section .model {
+      margin-bottom: 10px;
+    }
+    
+    .previous-work-section .model img {
+      width: 500px;
+      height: 500px;
+      object-fit: scale-down;
+      border-radius: 2% ;
+    }
+    
+    .previous-work-section .model .details {
+      margin-top: 40px;
+      font-size: 20px;
+    }
+    
+    .contact-section {
+      margin-top: 180px;
+      text-align: center;
+      background-image: url('girl-image.png'); 
+      background-size: cover;
+      background-position: center;
+      padding: 80px;
+      color: hotpink;
+    }
+  
+    .contact-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .contact-section .contact-info {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .contact-section .contact-info .info {
+      flex: 1;
+      text-align: left;
+    }
+    
+    .contact-section .contact-info .info h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .contact-section .contact-info .info p {
+      font-size: 20px;
+    }
+    
+    .contact-section .contact-form {
+      margin-top: 40px;
+      text-align: left;
+    }
+    
+    .contact-section .contact-form label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+   .contact-section .contact-form input[type="text"],
+    .contact-section .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      background-color: black;
+      color: white;
+    }
+    
+    .contact-section .contact-form button {
+      background-color:black;
+      color: hotpink ;
+      padding: 10px 20px;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    footer {
+      background-color:black ;
+      color: hotpink;
+      padding: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Modeling Agency</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section class="hero-image">
+      <div class="hero-content">
+        <h1>Welcome to Our Elite  </h1>
+        <p>We represent talented models for various industries</p>
+      </div>
+    </section>
+    
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>We understand that our role is to cause,create,intiate,and BRING TO LIFE YOUR DESIRED IMPRESSION.Over the years,we have formed relationship with a diverse and vast clientele.We now create solutions and trends.</p>
+    </section>
+    
+    <section id="services" class="services-section">
+      <h2>Our Services</h2>
+      <p>We offer a wide range of modeling services:</p>
+      <button onclick="showRampWalk()">Ramp Walk</button>
+      <button onclick="showCommercial()">Commercial</button>
+      <div id="rampWalk" style="display: none;">
+        <h3>Ramp Walk</h3>
+        <p>Experience the thrill of the runway with our talented models showcasing the latest fashion trends.</p>
+      </div>
+      <div id="commercial" style="display: none;">
+        <h3>Commercial</h3>
+        <p>Our models are experts at representing products and brands in advertisements and promotional campaigns.</p>
+      </div>
+    </section>
+    
+    <section id="portfolio" class="previous-work-section">
+      <h2>Previous Work</h2>
+      <div class="model">
+        <img src="1.png" alt="Model 1">
+        <div class="details">
+          <h3>Model 1</h3>
+          <p>Height: 5'9" | Age: 25 | Hair: Brown | Eyes: Blue
+            She is fearless, unafraid to take risks and pursue her dreams.
+   Above all, a strong lady uplifts and supports those around her, embodying true leadership.
+          </p>
+        </div>
+      </div>
+      <div class="model">
+        <img src="2.png" alt="Model 2">
+        <div class="details">
+          <h3>Model 2</h3>
+          <p>Height: 5'10" | Age: 22 | Hair: Blonde | Eyes: Green 
+              Strong Lady: A strong lady exudes grace and poise, even in the face of adversity. </p>
+        </div>
+      </div>
+      <div class="model">
+        <img src="3.png" alt="Model 3">
+        <div class="details">
+          <h3>Model 3</h3>
+          <p>Height: 5'8" | Age: 27 | Hair: Black | Eyes: Brown
+             Achieve many success:She is fearless, unafraid to take risks and pursue her dreams. </p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <div class="info">
+          <h3>Location</h3>
+          <p>Kathmandu, Nepal</p>
+        </div>
+        <div class="info">
+          <h3>Email</h3>
+          <p><a href="mailto:Samridikarki2003@gmail.com">Samridikarki2003@gmail.com</a></p>
+        </div>
+        <div class="info">
+          <h3>Tel</h3>
+          <p>+977 9803358837</p>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <h3>Fill out the form below:</h3>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="permanent-address">Permanent Address</label>
+          <input type="text" id="permanent-address" name="permanent-address" required>
+          
+          <label for="temporary-address">Temporary Address</label>
+          <input type="text" id="temporary-address" name="temporary-address" required>
+          
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" name="phone" required>
+          
+          <label for="mother-name">Mother's Name</label>
+          <input type="text" id="mother-name" name="mother-name" required>
+          
+          <label for="father-name">Father's Name</label>
+          <input type="text" id="father-name" name="father-name" required>
+          
+          <label for="aim">Aim</label>
+          <input type="text" id="aim" name="aim" required>
+
+          
+          <label for="interest">Why are you into in this field?</label>
+          <textarea id="interest" name="interest" required></textarea>
+          
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Modeling Agency. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    function showRampWalk() {
+      var rampWalk = document.getElementById("rampWalk");
+      var commercial = document.getElementById("commercial");
+      rampWalk.style.display = "block";
+      commercial.style.display = "none";
+    }
+    
+    function showCommercial() {
+      var rampWalk = document.getElementById("rampWalk");
+      var commercial = document.getElementById("commercial");
+      rampWalk.style.display = "none";
+      commercial.style.display = "block";
+    }
+    
+
+
+  </script>
+</body>
+</html>
